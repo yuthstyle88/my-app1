@@ -1,5 +1,144 @@
 @layer components {
-    .btn-blue {
-        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    .btn {
+        @apply inline-flex items-center rounded-full px-5 py-2 border border-transparent font-bold text-white;
+        @apply transition-all duration-200 ease-linear;
+
+        &:hover {
+            @apply text-white;
+        }
+
+        &:focus {
+            @apply outline-none;
+        }
+
+        &:disabled {
+            @apply opacity-50;
+        }
+
+        &_primary {
+            @apply bg-primary;
+
+            &:hover:not([disabled]) {
+                @apply bg-primary-700;
+            }
+        }
+
+        &_secondary {
+            @apply bg-secondary;
+
+            &:hover:not([disabled]) {
+                @apply bg-primary;
+            }
+        }
+
+        &_success {
+            @apply bg-green;
+
+            &:hover:not([disabled]) {
+                @apply bg-green-900;
+            }
+        }
+
+        &_danger {
+            @apply bg-red;
+
+            &:hover:not([disabled]) {
+                @apply bg-red-900;
+            }
+        }
+
+        &_warning {
+            @apply bg-yellow;
+
+            &:hover:not([disabled]) {
+                @apply bg-yellow-900;
+            }
+        }
+
+        &_info {
+            @apply bg-blue;
+
+            &:hover:not([disabled]) {
+                @apply bg-blue-900;
+            }
+        }
+
+        &_outlined {
+            @apply bg-transparent;
+
+            &:hover:not([disabled]) {
+                @apply bg-transparent;
+            }
+
+            &.btn {
+                &_primary {
+                    @apply border-primary text-primary;
+
+                    &:hover:not([disabled]) {
+                        @apply border-primary-700  text-primary-700;
+                    }
+                }
+
+                &_secondary {
+                    @apply border-secondary text-secondary;
+
+                    &:hover:not([disabled]) {
+                        @apply border-primary text-primary;
+                    }
+                }
+
+                &_success {
+                    @apply border-green text-green;
+
+                    &:hover:not([disabled]) {
+                        @apply border-green-900 text-green-900;
+                    }
+                }
+
+                &_danger {
+                    @apply border-red text-red;
+
+                    &:hover:not([disabled]) {
+                        @apply border-red-900 text-red-900;
+                    }
+                }
+
+                &_warning {
+                    @apply border-yellow text-yellow;
+
+                    &:hover:not([disabled]) {
+                        @apply border-yellow-900 text-yellow-900;
+                    }
+                }
+
+                &_info {
+                    @apply border-blue text-blue;
+
+                    &:hover:not([disabled]) {
+                        @apply border-blue-900 text-blue-900;
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            @apply w-8 h-8 p-0 justify-center text-xl leading-none;
+
+            &_large {
+                @apply w-10 h-10;
+            }
+        }
+
+        &-link {
+            @apply m-0 p-0;
+
+            &:hover {
+                @apply text-primary;
+            }
+
+            &:focus {
+                @apply outline-none;
+            }
+        }
     }
 }
