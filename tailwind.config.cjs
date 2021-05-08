@@ -5,6 +5,7 @@ module.exports = {
 	purge: {
 		content: [
 			"./src/**/*.svelte",
+			"./src/app.html",
 		],
 		options: {
 			defaultExtractor: (content) => [

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/Header/index.svelte';
-	import '../app.css';
+	import '../app.postcss';
 </script>
 
 <Header />
@@ -10,7 +10,7 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p class="text-red-800">visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer>
 
 <style>

@@ -19,17 +19,17 @@
 			</picture>
 
 		</div>
-		<button type="submit" class="btn btn_primary ml-auto uppercase">Login</button>
+		<button type="submit" class="btn">Login</button>
 	</h1>
 
-	<h2>
+	<h2 class="text-red-800">
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
 	<Counter />
 </section>
 
-<style style lang="postcss">
+<style lang="postcss">
 	section {
 		display: flex;
 		flex-direction: column;
@@ -55,5 +55,8 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+	.btn {
+		@apply text-white bg-indigo-500 px-2 py-1 rounded hover:bg-indigo-800;
 	}
 </style>
