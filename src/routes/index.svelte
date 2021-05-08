@@ -17,7 +17,7 @@
 				<source srcset="svelte-welcome.webp" type="image/webp" />
 				<img src="svelte-welcome.png" alt="Welcome" />
 			</picture>
-			<button class="btn btn-blue">XXXXX</button>
+			<button class="btn-blue">XXXXX</button>
 		</div>
 
 		to your new<br />SvelteKit app
