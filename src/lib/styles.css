@@ -1,0 +1,3 @@
+.btn2 {
+		@apply text-white bg-indigo-500 px-2 py-1 rounded hover:bg-indigo-800;
+	}

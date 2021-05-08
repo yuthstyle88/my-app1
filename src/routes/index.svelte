@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter/index.svelte';
+	import '$lib/styles.css'
 </script>
 
 <svelte:head>
@@ -19,7 +20,11 @@
 			</picture>
 
 		</div>
-		<button type="submit" class="btn">Login</button>
+
+		<button type="submit" class="btn">Login1</button>
+		<button type="submit" class="btn2">Login2</button>
+
+
 	</h1>
 
 	<h2 class="text-red-800">
@@ -56,7 +61,10 @@
 		top: 0;
 		display: block;
 	}
+
 	.btn {
 		@apply text-white bg-indigo-500 px-2 py-1 rounded hover:bg-indigo-800;
 	}
+
+
 </style>
